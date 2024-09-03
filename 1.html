@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        table,td, th {
+          border: 1px solid #000000;
+          border-collapse: collapse;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Keterangan</th>
+            <th>Bersedia Membayar</th>
+        </tr>
+        <tr>
+            <td style="text-align: left;">1</td>
+            <td style="text-align: left;">Bersedia membayar <span style="font-weight: bold;">Dana Sumbangan Pembangunan (DSP)</span> Sebesar <span style="font-weight: bold;">Rp 8.500.000</span> dengan mekanisme <br>
+                pemabayaran Dana Sumbangan Pendidikan.</td>
+            <td>
+                <form>
+                    <input type="radio" id="Lunas" 
+                    name="radioGroup" value="lunasin">
+                    <label for="Lunas">Lunas saat Daftar Ulang</label>
+                    <br>
+    
+                    <input type="radio" id="Lunas nanti" 
+                    name="radioGroup" value="lunasin lama">
+                    <label for="Lunas nanti">60% dibayarkan saat daftar ulang dan sisanya dibayarkan paling lambat tanggal 13 Juli 2024</label>
+                    <br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bersedia membayar <span style="font-weight: bold;">Penyelenggaraan Pendidikan (SPP)</span> secara rutin setiap bulan sebesar <span style="font-weight: bold;">Rp 550.000</span> <br> yang dibayarkan sebelum tanggal 10 setiap bulannya kecuali bulan Juli 2024</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td>
+                <span style="font-weight: bold;">Pembayaran Lainnya.</span>
+                <br>
+                Setelah Putra/Putri kami diterima di SMK Wikrama Bogor, kami juga bersedia memberikan:
+                <br>
+                <br>
+                a.Wakaf pembangunan Mesjid Al-Ikram :
+            </td>
+            <td>
+                <form>
+                    <input type="radio" id="Duit" 
+                    name="radioGroup" value="tiga ratus">
+                    <label for="duit">Rp 300.000</label>
+                    <br>
+                    
+                    <input type="radio" id="Duit" 
+                    name="radioGroup" value="lima ratus">
+                    <label for="duit">Rp 500.000</label>
+                    <br>
+
+                    <input type="radio" id="Duit" 
+                    name="radioGroup" value="satu juta">
+                    <label for="duit">Rp 1.000.000</label>
+                    <br>
+                    
+                    <input type="radio" id="Duit" 
+                    name="radioGroup" value="dua juta">
+                    <label for="duit">Rp 2.000.000</label>
+                    <br>
+
+                    <input type="radio" id="Duit" 
+                    name="radioGroup" value="lima juta">
+                    <label for="duit">Rp 5.000.000</label>
+                    <br>
+                    
+                    <input type="radio" id="Duit" 
+                    name="radioGroup" value="lima ratus">
+                    <label for="duit"> >Rp 5.000.000 atau Rp <input type="text"> </label>
+                    <br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>b.<span style="font-weight: bold;">Zakat Infaq dan Sodaqoh</span> secara rutin setiap bulan:</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+</body>
+</html>

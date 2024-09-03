@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Opsi Poin</h4>
+    <form action="">
+        <div>
+            <span>Opsi Poin 1</span><br>
+            <input type="text" placeholder="Poin">
+            <input type="text" name="name" id="" placeholder="Opsi"><br>
+            <div id="add_content"></div>
+            <button id="tombol" type="button" onclick="myFunction()">+ Poin</button>
+        </div>  
+    </form>
+
+    <script>
+        let clickCount = 1;
+
+        function myFunction() {
+            clickCount++;
+            let addEl = document.getElementById('add_content');
+            let newFields = document.createElement('div');
+            newFields.innerHTML = `
+                <span>Opsi Poin ${clickCount}</span><br>
+                <input type="text" placeholder="Poin">
+                <input type="text" name="name" id="" placeholder="Opsi"><br>
+            `;
+            addEl.appendChild(newFields);
+
+            if (clickCount >= 4) {
+                document.getElementById('tombol').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="4.css">
+ </head>
+ <body>
+ 
+ <div class="row" style="height: 10%;position: absolute;left: 23%;bottom: 25%;">
+   <div class="column">
+     <img src="img/WhatsApp Image 2024-05-21 at 10.48.35_89920703.jpg" style="width:75%" onclick="myFunction(this);">
+   </div>
+   <div class="column">
+     <img src="img/WhatsApp Image 2024-05-21 at 13.04.23_6ca163c2.jpg" style="width:75%" onclick="myFunction(this);">
+   </div>
+   <div class="column">
+     <img src="img/WhatsApp Image 2024-05-21 at 13.04.36_569978c7.jpg" style="width:75%" onclick="myFunction(this);">
+   </div>
+ </div>
+ 
+ <div class="container">
+   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   <img id="expandedImg">
+   <div id="imgtext"></div>
+   <div id="opacityControl">
+     <label for="opacityRange">Opacity:</label>
+     <input type="range" id="opacityRange" min="0" max="1" step="0.01" value="0.8" onchange="updateImageOpacity()">
+   </div>
+ </div>
+ 
+ <script>
+ function myFunction(imgs) {
+   var expandImg = document.getElementById("expandedImg");
+   expandImg.src = imgs.src;
+   expandImg.style.opacity = document.getElementById("opacityRange").value;
+   expandImg.parentElement.style.display = "block";
+ }
+ 
+ function updateImageOpacity() {
+   var expandImg = document.getElementById("expandedImg");
+   var opacity = document.getElementById("opacityRange").value;
+   expandImg.style.opacity = opacity;
+ }
+ </script>
+ 
+ </body>
+ </html>
+ 

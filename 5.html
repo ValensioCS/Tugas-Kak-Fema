@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+</head>
+<body>
+    <button type="button" class="alert" onclick="waktu()">Bahaya</button>
+    <p id="demo" class="test"></p>
+
+
+    <script>
+        function waktu() {
+    let countdownElement = document.getElementById('demo');
+    let count = 10;
+
+    let countdownTimer = setInterval(function() {
+        countdownElement.innerHTML = "Your computer have virus" + count;
+        count--;
+
+        if (count < 0) {
+            clearInterval(countdownTimer);
+            countdownElement.innerHTML = "";
+        }
+    }, 1000);
+
+    const style = document.createElement('style');
+    style.innerHTML += `
+      .test {
+        background-color: ;
+        width:300px;
+      }
+    `;
+document.head.appendChild(style);
+}
+    </script>
+</body>
+</html>
